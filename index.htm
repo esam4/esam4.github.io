@@ -12,6 +12,8 @@
       background-color: #f2f2f2;
       padding: 20px;
       margin-left: 300px; /* Add left margin */
+      position: sticky; /* fixes left division */
+      top: 0; /* fixes at the top */
     }
     
     .right {
@@ -19,6 +21,22 @@
       background-color: #e6e6e6;
       padding: 20px;
       margin-right: 300px; /* Add right margin */
+      overflow-y: auto; /* adds scroller for overflow */
+    }
+
+    .left h2 {
+      font-size: 24px; /* Example Heading 2 font size for the left division */
+      font-weight: bold; /* Make heading bold */
+    }
+    
+    .right h2 {
+      font-size: 32px; /* Example Heading 2 font size for the right division */
+      font-weight: bold; /* Make heading bold */
+    }
+    
+    .right h3 {
+      font-size: 18px; /* Example subheading font size */
+      font-weight: bold; /* Make subheadings bold */
     }
   </style>
 </head>
@@ -34,6 +52,10 @@
     <div class="right">
       <h2> Projects </h2>
       <p>This is where I will outline my projects </p>
+      <h3>Subheading 1</h3>
+      <p>This is the content under Subheading 1.</p>
+      <h3>Subheading 2</h3>
+      <p>This is the content under Subheading 2.</p>
     </div>
   </div>
 </body>
